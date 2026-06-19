@@ -1,0 +1,43 @@
+# 原始照片（不纳入版本控制）
+image/
+
+# 生成的照片文件（均为大文件）
+photos/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 环境配置（含个人路径，不提交）
+.claude/settings.local.json
+
+# API 密钥（不提交）
+.env
+
+# 生成的 PDF 报告（可重新生成）
+pdfReport/
+
+# 评分结果目录（可重新生成）
+# 旧结构: output/<模式>/<版本>/
+output/histogram/
+output/hybrid/
+output/vision/
+# 新结构: output/<版本>/<模式>/  (版本号第一层级)
+output/[0-9]*/
+# 输出目录根级文件
+output/analysis.json
+output/vision_scores.json
+output/discovered_themes.json
+output/full_scored.json
+output/score_matrix.csv
+output/groups.json
+output/_score_hist.csv
+
+# 旧的运行结果快照（一次性的）
+Qwen3Process/
+hist_output/

@@ -1,0 +1,21 @@
+pictureSelect 4.0 — 动态叙事蓝图版
+
+发布日期: 2026-06-19
+
+核心特性:
+  - 4 套基础叙事方案（旅程叙事/情绪弧线/光影对比/极简留白）
+  - 动态叙事主题自动发现（基于 element_tags 共现分析）
+  - Qwen3-VL-Plus 视觉评分（摄影/情绪/艺术/叙事 四维评分）
+  - 9 宫格叙事蓝图匹配 + 裁剪建议
+  - 4 种电影级调色风格
+  - 可视化 HTML/Markdown 报告 + PDF 导出
+
+运行要求:
+  Python 3.10+
+  Pillow, numpy, tqdm, pillow-heif, aiohttp, markdown
+
+快速开始:
+  pip install Pillow numpy tqdm pillow-heif aiohttp markdown
+  python scripts/preprocess.py
+  python scripts/score_and_group.py --mode hybrid
+  python scripts/generate_visual_report.py --mode hybrid
